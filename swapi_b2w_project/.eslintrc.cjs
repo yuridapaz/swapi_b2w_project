@@ -14,5 +14,13 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    '@typescript-eslint/no-unused-vars': 'warn',
+    // '@typescript-eslint/no-unused-vars-experimental': 'error',
+    'no-unused-vars': 'off',
   },
-}
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
+};
